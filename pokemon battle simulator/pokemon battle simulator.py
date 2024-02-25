@@ -1,3 +1,9 @@
+### general points: 
+### 1. DRY DRY DRY
+### 2. good breakdown to small functions. good naming
+###
+
+
 import random
 
 def attack(attacker, defender, type_modify):
@@ -79,7 +85,7 @@ def modifyType(attacker, defender):
         case _:
             print('invalid input!')
 
-
+### do it dynamicly - DRY
 p1_first_pok = {'name': 'Rayquaza', 'level': 3, 'strength': 6, 'speed': 1, 'type': 'fire', 'life': 120}
 p1_sec_pok = {'name': 'Mewtwo', 'level': 5, 'strength': 7, 'speed': 2, 'type': 'water', 'life': 120}
 p1_third_pok = {'name': 'Lugia', 'level': 2, 'strength': 5, 'speed': 1, 'type': 'earth', 'life': 120}
@@ -87,7 +93,7 @@ p1_fourth_pok = {'name': 'Kyurem', 'level': 7, 'strength': 3, 'speed': 5, 'type'
 p1_fifth_pok = {'name': 'Xerneas', 'level': 8, 'strength': 8, 'speed': 3, 'type': 'wind', 'life': 120}
 player1 = [p1_first_pok, p1_sec_pok, p1_third_pok, p1_fourth_pok, p1_fifth_pok]
 p1_pok_num = 5
-
+### do it dynamicly - DRY
 p2_first_pok = {'name': 'Eternatus', 'level': 10, 'strength': 9, 'speed': 3, 'type': 'fire', 'life': 120}
 p2_sec_pok = {'name': 'Kyogre', 'level': 2, 'strength': 2, 'speed': 1, 'type': 'fire', 'life': 120}
 p2_third_pok = {'name': 'Zacian', 'level': 6, 'strength': 5, 'speed': 2, 'type': 'wind', 'life': 120}
@@ -95,13 +101,13 @@ p2_fourth_pok = {'name': 'Suicune', 'level': 1, 'strength': 2, 'speed': 2, 'type
 p2_fifth_pok = {'name': 'Lucario', 'level': 7, 'strength': 8, 'speed': 5, 'type': 'earth', 'life': 120}
 player2 = [p2_first_pok, p2_sec_pok, p2_third_pok, p2_fourth_pok, p2_fifth_pok]
 p2_pok_num = 5
-
+### dry
 p1_pokemon_choice = random.randint(0, p1_pok_num-1) #init
 p2_pokemon_choice = random.randint(0, p2_pok_num-1) #init
-
+### dry
 p1_pokemon = player1[p1_pokemon_choice]
 print(p1_pokemon['name'], 'has joined the fight\n')
-
+### dry
 p2_pokemon = player2[p2_pokemon_choice]
 print(p2_pokemon['name'], 'has joined the fight\n')
 
